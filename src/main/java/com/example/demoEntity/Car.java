@@ -22,6 +22,15 @@ package com.example.demoEntity;
 
 			@NotBlank
 			private String color;
+			
+
+			public Car(int carId, @NotBlank long serialNumber, @NotBlank String model, @NotBlank String color) {
+				super();
+				this.carId = carId;
+				this.serialNumber = serialNumber;
+				this.model = model;
+				this.color = color;
+			}
 
 			public int getCarId() {
 				return carId;
